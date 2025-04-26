@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+    padding: 1rem;
+}
+
+main {
+    flex: 3;
+    padding: 1rem;
+}
+
+aside {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-left: 2px solid #ccc;
+}
+
+aside u1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+#timer {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+#startStopBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 8px;
+    cursor: pointer;
+}
