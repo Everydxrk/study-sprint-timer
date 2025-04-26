@@ -12,8 +12,11 @@ header, footer {
 
 .container {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     min-height: 80vh;
     padding: 1rem;
+    gap: 2rem;
 }
 
 main {
@@ -26,11 +29,7 @@ aside {
     padding: 1rem;
     background-color: #f0f0f0;
     border-left: 2px solid #ccc;
-}
-
-aside u1 {
-    list-style-type: none;
-    padding: 0;
+    height: 100%;
 }
 
 aside ul li {
@@ -41,9 +40,24 @@ footer {
     font-size: 0.9rem;
 }
 
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 #timer {
     font-size: 48px;
-    margin: 20px 0;
+    margin: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 #startStopBtn {
@@ -54,6 +68,6 @@ footer {
 
 #resetBtn {
     padding: 10px 20px;
-    font-size: 8px;
+    font-size: 12px;
     cursor: pointer;
 }

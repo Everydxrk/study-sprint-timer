@@ -4,6 +4,7 @@ let timeLeft = 25 * 60; // 25 minutes in seconds
 
 const timerDisplay = document.getElementById('timer');
 const startStopBtn = document.getElementById('startStopBtn');
+const resetBtn = document.getElementById("resetBtn");
 
 // Function to update timer display
 function updateTimerDisplay() {
@@ -39,6 +40,15 @@ startStopBtn.addEventListener('click', () => {
         isRunning = false;
     }
 });
+
+// Reset button click
+resetBtn.addEventListener("click", () => {
+    clearInterval(timer); // Stop the timer if running
+    isRunning = false; // Reset running state
+    timeLeft = 25 * 60; // Reset time back to 25 minutes
+    updateTimerDisplay(); // Update the display
+    startStopBtn.textContent = "Start"; // Reset button text
+})
 
 // Initialize display
 updateTimerDisplay();
